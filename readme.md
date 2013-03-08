@@ -14,6 +14,8 @@ where `512a45c4` is timestamp which automatically changes when you modify the fi
 Install
 =======
 
+	$ composer require slamecka/timestamp:dev-master
+
 In your config.neon
 
 	nette:
