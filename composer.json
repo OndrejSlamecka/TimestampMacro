@@ -1,0 +1,20 @@
+{
+	"name": "slamecka/timestamp",
+	"description": "Adds n:src and n:href macros which append timestamp as a parameter to path (e.g. main.js?512a45c4)",
+	"keywords": ["Nette", "assets"],
+	"license": "BSD-3",
+	"authors": [
+		{
+			"name": "Ondrej Slamecka",
+			"email": "ondrej@slamecka.cz",
+			"homepage": "http://www.slamecka.cz"
+		}
+	],
+	"require": {
+		"php": ">=5.3.0",
+		"nette/nette": "2.*"
+	},
+	"autoload": {
+		"files": ["TimestampMacro.php"]
+	}
+}
