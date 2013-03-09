@@ -29,7 +29,7 @@ class TimestampMacro extends Latte\Macros\MacroSet
 		}
 
 		$class = get_called_class();
-		return $writer->write(' ?> ' . $node->name . '="<?php echo %escape(' . $class . '::getFileTimestamp(\'%node.args\', $_presenter->context->parameters[\'wwwDir\']))) ?>"<?php ');
+		return $writer->write(' ?> ' . $node->name . '="<?php echo %escape(' . $class . '::getFileTimestamp(\'%node.args\', $_presenter->context->parameters[\'wwwDir\'])) ?>"<?php ');
 	}
 
 
