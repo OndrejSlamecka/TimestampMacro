@@ -24,12 +24,12 @@ class TimestampMacro extends Latte\Macros\MacroSet
 	{
 		// Avoid using n:href in anchor (<a>) context
 		if ($node->htmlNode->name === 'a') {
-			// Cope of function macroLink @ http://api.nette.org/2.1/source-Latte.Macros.UIMacros.php.html
-			return $writer->write('echo %escape(%modify(' . ($node->name === 'plink' ? '$_presenter' : '$_control') . '->link(%node.word, %node.array?)))');
+			// Copy of function macroLink @ http://api.nette.org/2.1/source-Latte.Macros.UIMacros.php.html
+			return $writer->write(' ?> href="<?php echo %escape(%modify(' . ($node->name === 'plink' ? '$_presenter' : '$_control') . '->link(%node.word, %node.array?))) ?>"<?php ');
 		}
 
 		$class = get_called_class();
-		return $writer->write('echo \' ' . $node->name . '="\' . ' . $class . '::getFileTimestamp(\'%node.args\', $_presenter->context->parameters[\'wwwDir\']) . \'"\';');
+		return $writer->write(' ?> ' . $node->name . '="<?php echo %escape(' . $class . '::getFileTimestamp(\'%node.args\', $_presenter->context->parameters[\'wwwDir\']))) ?>"<?php ');
 	}
 
 
