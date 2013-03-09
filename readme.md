@@ -10,6 +10,7 @@ to produce code similar to
 
 where `512a45c4` is timestamp which automatically changes when you modify the file (it is filesystem's mtime).
 
+Please note that you don't have to & can't use `{$basePath}` with these macros because every path is constructed as `$basePath . '/' . $fileName`.
 
 Install
 =======
