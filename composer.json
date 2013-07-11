@@ -2,7 +2,7 @@
 	"name": "slamecka/timestamp",
 	"description": "Adds n:src and n:href macros which append timestamp as a parameter to path (e.g. main.js?512a45c4)",
 	"keywords": ["Nette", "assets"],
-	"license": "BSD-3",
+	"license": "Public Domain",
 	"authors": [
 		{
 			"name": "Ondrej Slamecka",
