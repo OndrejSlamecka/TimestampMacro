@@ -23,3 +23,7 @@ In your config.neon
 		latte:
 			macros:
 				- TimestampMacro
+
+-----
+
+Without license - Public Domain

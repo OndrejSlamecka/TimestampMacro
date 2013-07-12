@@ -3,7 +3,7 @@
  * Adds n:src and n:href macros which append timestamp as a parameter to path (e.g. main.js?512a45c4)
  *
  * @author Ondrej Slamecka, www.slamecka.cz
- * @license BSD-3
+ * @license Public Domain 
  */
 
 use Nette\Latte;
