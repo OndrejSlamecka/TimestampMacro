@@ -3,7 +3,7 @@
  * Adds n:src and n:href macros which append timestamp as a parameter to path (e.g. main.js?512a45c4)
  *
  * @author Ondrej Slamecka, www.slamecka.cz
- * @license Public Domain 
+ * @license Public Domain
  */
 
 use Nette\Latte;
@@ -29,7 +29,7 @@ class TimestampMacro extends Latte\Macros\MacroSet
 		}
 
 		$class = get_called_class();
-		return $writer->write(' ?> ' . $node->name . '="<?php echo %escape(' . $class . '::getFileTimestamp(\'%node.args\', $_presenter->context->parameters[\'wwwDir\'])) ?>"<?php ');
+		return $writer->write(' ?> ' . $node->name . '="<?php echo %escape(' . $class . '::getFileTimestamp(\'' . $node->args . '\', $_presenter->context->parameters[\'wwwDir\'])) ?>"<?php ');
 	}
 
 
