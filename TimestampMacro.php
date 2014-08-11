@@ -6,8 +6,6 @@
  * @license Public Domain
  */
 
-use Nette\Latte;
-
 class TimestampMacro extends Latte\Macros\MacroSet
 {
 
