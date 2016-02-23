@@ -26,4 +26,4 @@ In your config.neon
 
 -----
 
-Without license - Public Domain
+MIT license
